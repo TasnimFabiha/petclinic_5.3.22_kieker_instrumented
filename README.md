@@ -1,8 +1,3 @@
-Kieker 2.0.2 didn't capture useful traces in Petclinic 5.3.22 → Switched to Kieker 1.15.
-Kieker 1.15 worked for monitoring but failed with Java 17 when converting traces.
-Java 11 was required for trace analysis (.dat → .dot → .pdf conversion).
-Switched between Java 17 and Java 11 depending on the task.
-
 # Instrumented Spring Petclinic 5.3.22 with Kieker 1.15
 
 This repository contains the **Spring Petclinic 5.3.22** application instrumented with **Kieker 1.15** for performance monitoring and trace analysis.
@@ -22,8 +17,9 @@ Before integrating Kieker, the project was built and tested in its original form
 #### **Issue: Jacoco Version Compatibility**
 - The existing **Jacoco Maven Plugin** version was outdated and incompatible with the project’s build.
 - **Resolution:** The Jacoco Maven Plugin was updated in `pom.xml` as follows:
-
+```xml
   <jacoco-maven-plugin>0.8.12</jacoco-maven-plugin>
+```
 - After this the project builds and compiles successfully with both java 11, java 17
 
 ## 🛠 Instrumentation Process
@@ -37,20 +33,23 @@ Before integrating Kieker, the project was built and tested in its original form
 
 To enable **trace analysis** using Kieker, the following modifications were made:
 
-### ** Added web.xml with the integrated interceptor
+- Added web.xml with the integrated interceptor 
 
-### ** Added Kieker 1.15 Dependency in pom**
+- Added Kieker 1.15 Dependency in pom
 The `pom.xml` file was modified to include:
+```xml
 <dependency>
     <groupId>net.kieker-monitoring</groupId>
     <artifactId>kieker</artifactId>
     <version>1.15</version>
 </dependency>
+```
 
-### ** Spring Petclinic already included AspectJ version 1.9.7; therefore, no additional dependency was required **
+- Spring Petclinic already included AspectJ version 1.9.7; therefore, no additional dependency was required 
 
-### ** the AspectJ Maven Plugin (version 1.15) was integrated to enable instrumentation in the build section**
+- the AspectJ Maven Plugin (version 1.15) was integrated to enable instrumentation in the build section
 
+```xml
 <plugin>
     <groupId>org.codehaus.mojo</groupId>
     <artifactId>aspectj-maven-plugin</artifactId>
@@ -83,10 +82,12 @@ The `pom.xml` file was modified to include:
         </execution>
     </executions>
 </plugin>
+```
+---
+###### Note for future reference 
 
-
-# Note for future reference
-
-## Older spring framework version (petclinic 5.3.22 that uses javax servlet) needed to use to instrument with Kieker since Kieker doesn't support jakarta servlet [Kieker Issue](https://github.com/kieker-monitoring/kieker/issues/2840)
-
-## After collecting the traces (.dat and .map), for using trace analysis command (converting the .dat file to .dot) java version needed to downgrade to java 11 to java 17. 
+> - Older spring framework version (PetClinic 5.3.22 that uses javax servlet) needed to use to instrument with Kieker since Kieker doesn't support jakarta servlet [Kieker Issue](https://github.com/kieker-monitoring/kieker/issues/2840)
+> - Kieker 2.0.2 didn't capture useful traces in Petclinic 5.3.22 → Switched to Kieker 1.15.
+> - Kieker 1.15 worked for monitoring but failed with Java 17 when converting traces (converting the .dat file to .dot)
+> - Java 11 was required for trace analysis (.dat → .dot → .pdf conversion).
+> - Switched between Java 17 and Java 11, depending on the task.
