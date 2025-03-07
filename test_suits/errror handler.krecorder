@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>errror handler</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">initiate error</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:8080/<datalist><option>http://localhost:8080/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='main-navbar']/ul/li[4]/a/span[2]<datalist><option>xpath=//div[@id='main-navbar']/ul/li[4]/a/span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Veterinarians'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Find owners'])[1]/following::span[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::span[1]</option><option>xpath=//*/text()[normalize-space(.)='Error']/parent::*</option><option>xpath=//li[4]/a/span[2]</option></datalist></td><td></td></tr>
+</tbody></table>
+</body>
+</html>

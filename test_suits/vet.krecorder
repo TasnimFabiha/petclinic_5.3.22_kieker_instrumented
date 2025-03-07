@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>vet</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">see vets</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:8080/<datalist><option>http://localhost:8080/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='main-navbar']/ul/li[3]/a/span[2]<datalist><option>xpath=//div[@id='main-navbar']/ul/li[3]/a/span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Find owners'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Home'])[1]/following::span[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Error'])[1]/preceding::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Welcome'])[1]/preceding::span[3]</option><option>xpath=//*/text()[normalize-space(.)='Veterinarians']/parent::*</option><option>xpath=//li[3]/a/span[2]</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">view as xml</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:8080/vets<datalist><option>http://localhost:8080/vets</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>link=View as XML<datalist><option>link=View as XML</option><option>xpath=//a[contains(text(),'View as XML')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='radiology'])[2]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Henry Stevens'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='View as JSON'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::a[2]</option><option>xpath=//*/text()[normalize-space(.)='View as XML']/parent::*</option><option>xpath=//a[contains(@href, '/vets.xml')]</option><option>xpath=//div[2]/div/a</option><option>css=div.col-md-2 > a</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>2000<datalist><option>http://localhost:8080/vets</option><option>2000</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">view as json</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:8080/<datalist><option>http://localhost:8080/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>link=Veterinarians<datalist><option>link=Veterinarians</option><option>xpath=//div[@id='main-navbar']/ul/li[3]/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Find owners'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Home'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Error'])[1]/preceding::a[1]</option><option>xpath=//a[contains(@href, '/vets')]</option><option>xpath=//li[3]/a</option><option>css=a[title="veterinarians"]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>link=View as JSON<datalist><option>link=View as JSON</option><option>xpath=//a[contains(text(),'View as JSON')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='View as XML'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='radiology'])[2]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Stop'])[1]/preceding::a[1]</option><option>xpath=//*/text()[normalize-space(.)='View as JSON']/parent::*</option><option>xpath=//a[contains(@href, '/vets.json')]</option><option>xpath=//div[2]/a</option></datalist></td><td></td></tr>
+</tbody></table>
+</body>
+</html>
