@@ -1,0 +1,794 @@
+Total number of unique methods in the dot files: 113
+Extracted Methods:
+
+Class: org.springframework.samples.petclinic.PetclinicInitializer
+Method: <init>()
+  min: 611585ns
+  avg: 611585ns
+  max: 611585ns
+  total: 611585ns
+
+Class: org.springframework.samples.petclinic.PetclinicInitializer
+Method: createRootApplicationContext()
+  min: 62004545ns
+  avg: 62004545ns
+  max: 62004545ns
+  total: 62004545ns
+
+Class: org.springframework.samples.petclinic.PetclinicInitializer
+Method: createServletApplicationContext()
+  min: 126822ns
+  avg: 126822ns
+  max: 126822ns
+  total: 126822ns
+
+Class: org.springframework.samples.petclinic.PetclinicInitializer
+Method: getServletMappings()
+  min: 8615ns
+  avg: 8615ns
+  max: 8615ns
+  total: 8615ns
+
+Class: org.springframework.samples.petclinic.PetclinicInitializer
+Method: getServletFilters()
+  min: 2345784ns
+  avg: 2345784ns
+  max: 2345784ns
+  total: 2345784ns
+
+Class: org.springframework.samples.petclinic.model.BaseEntity
+Method: <init>()
+  min: 3376ns
+  avg: 5343ns
+  max: 9981ns
+  total: 32055ns
+
+Class: org.springframework.samples.petclinic.model.Person
+Method: <init>()
+  min: 3102ns
+  avg: 3152ns
+  max: 3201ns
+  total: 6303ns
+
+Class: org.springframework.samples.petclinic.model.Vet
+Method: <init>()
+  min: 4720ns
+  avg: 4720ns
+  max: 4720ns
+  total: 4720ns
+
+Class: org.springframework.samples.petclinic.model.NamedEntity
+Method: <init>()
+  min: 2086ns
+  avg: 2783ns
+  max: 3914ns
+  total: 8350ns
+
+Class: org.springframework.samples.petclinic.model.PetType
+Method: <init>()
+  min: 3357ns
+  avg: 3357ns
+  max: 3357ns
+  total: 3357ns
+
+Class: org.springframework.samples.petclinic.model.Pet
+Method: <init>()
+  min: 9145ns
+  avg: 9145ns
+  max: 9145ns
+  total: 9145ns
+
+Class: org.springframework.samples.petclinic.model.Owner
+Method: <init>()
+  min: 4308ns
+  avg: 4308ns
+  max: 4308ns
+  total: 4308ns
+
+Class: org.springframework.samples.petclinic.model.Specialty
+Method: <init>()
+  min: 2686ns
+  avg: 2686ns
+  max: 2686ns
+  total: 2686ns
+
+Class: org.springframework.samples.petclinic.model.Visit
+Method: <init>()
+  min: 75994ns
+  avg: 75994ns
+  max: 75994ns
+  total: 75994ns
+
+Class: org.springframework.samples.petclinic.repository.jpa.JpaPetRepositoryImpl
+Method: <init>()
+  min: 7508ns
+  avg: 7508ns
+  max: 7508ns
+  total: 7508ns
+
+Class: org.springframework.samples.petclinic.repository.jpa.JpaVetRepositoryImpl
+Method: <init>()
+  min: 6811ns
+  avg: 6811ns
+  max: 6811ns
+  total: 6811ns
+
+Class: org.springframework.samples.petclinic.repository.jpa.JpaOwnerRepositoryImpl
+Method: <init>()
+  min: 6328ns
+  avg: 6328ns
+  max: 6328ns
+  total: 6328ns
+
+Class: org.springframework.samples.petclinic.repository.jpa.JpaVisitRepositoryImpl
+Method: <init>()
+  min: 6284ns
+  avg: 6284ns
+  max: 6284ns
+  total: 6284ns
+
+Class: org.springframework.samples.petclinic.service.ClinicServiceImpl
+Method: <init>(..)
+  min: 7995ns
+  avg: 7995ns
+  max: 7995ns
+  total: 7995ns
+
+Class: org.springframework.samples.petclinic.util.CallMonitoringAspect
+Method: <init>()
+  min: 8518ns
+  avg: 8518ns
+  max: 8518ns
+  total: 8518ns
+
+Class: org.springframework.samples.petclinic.web.PetTypeFormatter
+Method: <init>(..)
+  min: 8600ns
+  avg: 8600ns
+  max: 8600ns
+  total: 8600ns
+
+Class: org.springframework.samples.petclinic.web.CrashController
+Method: <init>()
+  min: 9609ns
+  avg: 9609ns
+  max: 9609ns
+  total: 9609ns
+
+Class: org.springframework.samples.petclinic.web.CrashController
+Method: triggerException()
+  min: 49355ns
+  avg: 49355ns
+  max: 49355ns
+  total: 49355ns
+
+Class: org.springframework.samples.petclinic.web.OwnerController
+Method: <init>(..)
+  min: 8978ns
+  avg: 8978ns
+  max: 8978ns
+  total: 8978ns
+
+Class: org.springframework.samples.petclinic.web.PetController
+Method: <init>(..)
+  min: 8549ns
+  avg: 8549ns
+  max: 8549ns
+  total: 8549ns
+
+Class: org.springframework.samples.petclinic.web.VetController
+Method: <init>(..)
+  min: 7586ns
+  avg: 7586ns
+  max: 7586ns
+  total: 7586ns
+
+Class: org.springframework.samples.petclinic.web.VisitController
+Method: <init>(..)
+  min: 7037ns
+  avg: 7037ns
+  max: 7037ns
+  total: 7037ns
+
+Class: kieker.monitoring.probe.servlet.SessionAndTraceRegistrationFilter
+Method: doFilter(..)
+  min: 16541628ns
+  avg: 636977404ns
+  max: 2057800577ns
+  total: 2547909616ns
+
+Class: org.springframework.samples.petclinic.model.BaseEntity
+Method: getId()
+  min: 1343ns
+  avg: 2359ns
+  max: 8888ns
+  total: 68402ns
+
+Class: org.springframework.samples.petclinic.model.BaseEntity
+Method: isNew()
+  min: 1974ns
+  avg: 3510ns
+  max: 5477ns
+  total: 14038ns
+
+Class: org.springframework.samples.petclinic.model.BaseEntity
+Method: setId(..)
+  min: 1996ns
+  avg: 1996ns
+  max: 1996ns
+  total: 1996ns
+
+Class: org.springframework.samples.petclinic.model.Person
+Method: getLastName()
+  min: 842ns
+  avg: 5589ns
+  max: 147748ns
+  total: 234757ns
+
+Class: org.springframework.samples.petclinic.model.Person
+Method: setLastName(..)
+  min: 1128ns
+  avg: 4357ns
+  max: 13541ns
+  total: 21784ns
+
+Class: org.springframework.samples.petclinic.model.Person
+Method: getFirstName()
+  min: 1441ns
+  avg: 2926ns
+  max: 8525ns
+  total: 73148ns
+
+Class: org.springframework.samples.petclinic.model.Person
+Method: setFirstName(..)
+  min: 1599ns
+  avg: 1609ns
+  max: 1618ns
+  total: 3217ns
+
+Class: org.springframework.samples.petclinic.model.NamedEntity
+Method: getName()
+  min: 1036ns
+  avg: 2172ns
+  max: 5007ns
+  total: 45606ns
+
+Class: org.springframework.samples.petclinic.model.Pet
+Method: getBirthDate()
+  min: 2798ns
+  avg: 2798ns
+  max: 2798ns
+  total: 2798ns
+
+Class: org.springframework.samples.petclinic.model.Pet
+Method: getType()
+  min: 5523ns
+  avg: 5523ns
+  max: 5523ns
+  total: 5523ns
+
+Class: org.springframework.samples.petclinic.model.Pet
+Method: getVisits()
+  min: 85731ns
+  avg: 85731ns
+  max: 85731ns
+  total: 85731ns
+
+Class: org.springframework.samples.petclinic.model.Pet
+Method: getVisitsInternal()
+  min: 2445ns
+  avg: 2445ns
+  max: 2445ns
+  total: 2445ns
+
+Class: org.springframework.samples.petclinic.model.Owner
+Method: getAddress()
+  min: 1317ns
+  avg: 2301ns
+  max: 10119ns
+  total: 57529ns
+
+Class: org.springframework.samples.petclinic.model.Owner
+Method: getCity()
+  min: 1160ns
+  avg: 1779ns
+  max: 4150ns
+  total: 44473ns
+
+Class: org.springframework.samples.petclinic.model.Owner
+Method: getTelephone()
+  min: 1205ns
+  avg: 1845ns
+  max: 3223ns
+  total: 46123ns
+
+Class: org.springframework.samples.petclinic.model.Owner
+Method: getPets()
+  min: 19817ns
+  avg: 524570ns
+  max: 2862554ns
+  total: 7868549ns
+
+Class: org.springframework.samples.petclinic.model.Owner
+Method: getPetsInternal()
+  min: 881ns
+  avg: 1311ns
+  max: 3584ns
+  total: 19670ns
+
+Class: org.springframework.samples.petclinic.model.Owner
+Method: setAddress(..)
+  min: 2149ns
+  avg: 2161ns
+  max: 2172ns
+  total: 4321ns
+
+Class: org.springframework.samples.petclinic.model.Owner
+Method: setCity(..)
+  min: 1608ns
+  avg: 1702ns
+  max: 1796ns
+  total: 3404ns
+
+Class: org.springframework.samples.petclinic.model.Owner
+Method: setTelephone(..)
+  min: 1478ns
+  avg: 1670ns
+  max: 1861ns
+  total: 3339ns
+
+Class: org.springframework.samples.petclinic.repository.jpa.JpaOwnerRepositoryImpl
+Method: findByLastName(..)
+  min: 10020618ns
+  avg: 146056446ns
+  max: 414792863ns
+  total: 438169337ns
+
+Class: org.springframework.samples.petclinic.repository.jpa.JpaOwnerRepositoryImpl
+Method: findById(..)
+  min: 923200ns
+  avg: 4508480ns
+  max: 14425382ns
+  total: 31559361ns
+
+Class: org.springframework.samples.petclinic.repository.jpa.JpaOwnerRepositoryImpl
+Method: save(..)
+  min: 25103176ns
+  avg: 31550279ns
+  max: 37997382ns
+  total: 63100558ns
+
+Class: org.springframework.samples.petclinic.service.ClinicServiceImpl
+Method: findOwnerByLastName(..)
+  min: 10068347ns
+  avg: 146129825ns
+  max: 414924196ns
+  total: 438389475ns
+
+Class: org.springframework.samples.petclinic.service.ClinicServiceImpl
+Method: findOwnerById(..)
+  min: 1578024ns
+  avg: 5451269ns
+  max: 14498849ns
+  total: 38158886ns
+
+Class: org.springframework.samples.petclinic.service.ClinicServiceImpl
+Method: saveOwner(..)
+  min: 25153788ns
+  avg: 31635238ns
+  max: 38116688ns
+  total: 63270476ns
+
+Class: org.springframework.samples.petclinic.web.OwnerController
+Method: initFindForm(..)
+  min: 41391ns
+  avg: 98283ns
+  max: 174012ns
+  total: 393132ns
+
+Class: org.springframework.samples.petclinic.web.OwnerController
+Method: setAllowedFields(..)
+  min: 6364ns
+  avg: 36597ns
+  max: 280489ns
+  total: 878318ns
+
+Class: org.springframework.samples.petclinic.web.OwnerController
+Method: processFindForm(..)
+  min: 15737699ns
+  avg: 191808084ns
+  max: 543726307ns
+  total: 575424253ns
+
+Class: org.springframework.samples.petclinic.web.OwnerController
+Method: showOwner(..)
+  min: 3379737ns
+  avg: 9182034ns
+  max: 16044216ns
+  total: 55092205ns
+
+Class: org.springframework.samples.petclinic.web.OwnerController
+Method: initCreationForm(..)
+  min: 55108ns
+  avg: 55108ns
+  max: 55108ns
+  total: 55108ns
+
+Class: org.springframework.samples.petclinic.web.OwnerController
+Method: processCreationForm(..)
+  min: 54354618ns
+  avg: 54354618ns
+  max: 54354618ns
+  total: 54354618ns
+
+Class: org.springframework.samples.petclinic.web.OwnerController
+Method: initUpdateOwnerForm(..)
+  min: 13808390ns
+  avg: 13808390ns
+  max: 13808390ns
+  total: 13808390ns
+
+Class: org.springframework.samples.petclinic.web.OwnerController
+Method: processUpdateOwnerForm(..)
+  min: 76483366ns
+  avg: 76483366ns
+  max: 76483366ns
+  total: 76483366ns
+
+Class: org.springframework.samples.petclinic.model.NamedEntity
+Method: toString()
+  min: 5567ns
+  avg: 6595ns
+  max: 8857ns
+  total: 39567ns
+
+Class: org.springframework.samples.petclinic.model.NamedEntity
+Method: setName(..)
+  min: 1389ns
+  avg: 3159ns
+  max: 4928ns
+  total: 6317ns
+
+Class: org.springframework.samples.petclinic.model.Pet
+Method: getOwner()
+  min: 1332ns
+  avg: 2202ns
+  max: 3127ns
+  total: 8806ns
+
+Class: org.springframework.samples.petclinic.model.Pet
+Method: setBirthDate(..)
+  min: 3874ns
+  avg: 5254ns
+  max: 6634ns
+  total: 10508ns
+
+Class: org.springframework.samples.petclinic.model.Pet
+Method: setType(..)
+  min: 1916ns
+  avg: 2010ns
+  max: 2104ns
+  total: 4020ns
+
+Class: org.springframework.samples.petclinic.model.Pet
+Method: setOwner(..)
+  min: 824ns
+  avg: 1140ns
+  max: 1720ns
+  total: 3420ns
+
+Class: org.springframework.samples.petclinic.model.Owner
+Method: addPet(..)
+  min: 12200ns
+  avg: 29549ns
+  max: 56793ns
+  total: 88647ns
+
+Class: org.springframework.samples.petclinic.model.Owner
+Method: getPet(..)
+  min: 40436ns
+  avg: 40436ns
+  max: 40436ns
+  total: 40436ns
+
+Class: org.springframework.samples.petclinic.repository.jpa.JpaPetRepositoryImpl
+Method: findPetTypes()
+  min: 1437560ns
+  avg: 4076122ns
+  max: 13967137ns
+  total: 24456733ns
+
+Class: org.springframework.samples.petclinic.repository.jpa.JpaPetRepositoryImpl
+Method: findById(..)
+  min: 5621509ns
+  avg: 5621509ns
+  max: 5621509ns
+  total: 5621509ns
+
+Class: org.springframework.samples.petclinic.repository.jpa.JpaPetRepositoryImpl
+Method: save(..)
+  min: 23864362ns
+  avg: 33294485ns
+  max: 42724607ns
+  total: 66588969ns
+
+Class: org.springframework.samples.petclinic.service.ClinicServiceImpl
+Method: findPetTypes()
+  min: 1467249ns
+  avg: 4342755ns
+  max: 14139412ns
+  total: 26056529ns
+
+Class: org.springframework.samples.petclinic.service.ClinicServiceImpl
+Method: findPetById(..)
+  min: 5717565ns
+  avg: 5717565ns
+  max: 5717565ns
+  total: 5717565ns
+
+Class: org.springframework.samples.petclinic.service.ClinicServiceImpl
+Method: savePet(..)
+  min: 23906594ns
+  avg: 33462057ns
+  max: 43017519ns
+  total: 66924113ns
+
+Class: org.springframework.samples.petclinic.web.PetTypeFormatter
+Method: print(..)
+  min: 5518ns
+  avg: 31931ns
+  max: 776798ns
+  total: 1213362ns
+
+Class: org.springframework.samples.petclinic.web.PetTypeFormatter
+Method: parse(..)
+  min: 5506444ns
+  avg: 6076689ns
+  max: 6646933ns
+  total: 12153377ns
+
+Class: org.springframework.samples.petclinic.web.PetController
+Method: findOwner(..)
+  min: 4616676ns
+  avg: 7914686ns
+  max: 13776947ns
+  total: 31658742ns
+
+Class: org.springframework.samples.petclinic.web.PetController
+Method: populatePetTypes()
+  min: 2268370ns
+  avg: 6782549ns
+  max: 15288928ns
+  total: 27130196ns
+
+Class: org.springframework.samples.petclinic.web.PetController
+Method: initUpdateForm(..)
+  min: 7942207ns
+  avg: 7942207ns
+  max: 7942207ns
+  total: 7942207ns
+
+Class: org.springframework.samples.petclinic.web.PetController
+Method: initOwnerBinder(..)
+  min: 9453ns
+  avg: 12343ns
+  max: 19691ns
+  total: 49370ns
+
+Class: org.springframework.samples.petclinic.web.PetController
+Method: initPetBinder(..)
+  min: 19241ns
+  avg: 246201ns
+  max: 910570ns
+  total: 984804ns
+
+Class: org.springframework.samples.petclinic.web.PetController
+Method: processUpdateForm(..)
+  min: 208725524ns
+  avg: 208725524ns
+  max: 208725524ns
+  total: 208725524ns
+
+Class: org.springframework.samples.petclinic.web.PetController
+Method: initCreationForm(..)
+  min: 144865ns
+  avg: 144865ns
+  max: 144865ns
+  total: 144865ns
+
+Class: org.springframework.samples.petclinic.web.PetController
+Method: processCreationForm(..)
+  min: 26493282ns
+  avg: 26493282ns
+  max: 26493282ns
+  total: 26493282ns
+
+Class: org.springframework.samples.petclinic.web.PetValidator
+Method: <init>()
+  min: 969ns
+  avg: 2535ns
+  max: 5121ns
+  total: 10139ns
+
+Class: org.springframework.samples.petclinic.web.PetValidator
+Method: supports(..)
+  min: 1943ns
+  avg: 5134ns
+  max: 13328ns
+  total: 20534ns
+
+Class: org.springframework.samples.petclinic.web.PetValidator
+Method: validate(..)
+  min: 16748ns
+  avg: 38244ns
+  max: 59739ns
+  total: 76487ns
+
+Class: org.springframework.samples.petclinic.model.Pet
+Method: addVisit(..)
+  min: 17482ns
+  avg: 77050ns
+  max: 136618ns
+  total: 154100ns
+
+Class: org.springframework.samples.petclinic.model.Visit
+Method: setPet(..)
+  min: 848ns
+  avg: 39104ns
+  max: 77359ns
+  total: 78207ns
+
+Class: org.springframework.samples.petclinic.model.Visit
+Method: getPet()
+  min: 1872ns
+  avg: 3536ns
+  max: 4990ns
+  total: 24753ns
+
+Class: org.springframework.samples.petclinic.model.Visit
+Method: getDate()
+  min: 2364ns
+  avg: 3710ns
+  max: 5450ns
+  total: 22259ns
+
+Class: org.springframework.samples.petclinic.model.Visit
+Method: getDescription()
+  min: 1660ns
+  avg: 6403ns
+  max: 24597ns
+  total: 38419ns
+
+Class: org.springframework.samples.petclinic.model.Visit
+Method: setDate(..)
+  min: 5799ns
+  avg: 5799ns
+  max: 5799ns
+  total: 5799ns
+
+Class: org.springframework.samples.petclinic.model.Visit
+Method: setDescription(..)
+  min: 1538ns
+  avg: 1538ns
+  max: 1538ns
+  total: 1538ns
+
+Class: org.springframework.samples.petclinic.repository.jpa.JpaVisitRepositoryImpl
+Method: save(..)
+  min: 44557827ns
+  avg: 44557827ns
+  max: 44557827ns
+  total: 44557827ns
+
+Class: org.springframework.samples.petclinic.service.ClinicServiceImpl
+Method: saveVisit(..)
+  min: 44737705ns
+  avg: 44737705ns
+  max: 44737705ns
+  total: 44737705ns
+
+Class: org.springframework.samples.petclinic.web.VisitController
+Method: setAllowedFields(..)
+  min: 7883ns
+  avg: 12513ns
+  max: 22420ns
+  total: 62563ns
+
+Class: org.springframework.samples.petclinic.web.VisitController
+Method: loadPetWithVisit(..)
+  min: 7268899ns
+  avg: 9902668ns
+  max: 12536437ns
+  total: 19805336ns
+
+Class: org.springframework.samples.petclinic.web.VisitController
+Method: initNewVisitForm(..)
+  min: 13221ns
+  avg: 13221ns
+  max: 13221ns
+  total: 13221ns
+
+Class: org.springframework.samples.petclinic.web.VisitController
+Method: processNewVisitForm(..)
+  min: 59939148ns
+  avg: 59939148ns
+  max: 59939148ns
+  total: 59939148ns
+
+Class: org.springframework.samples.petclinic.model.Vet
+Method: getSpecialties()
+  min: 14169ns
+  avg: 237653ns
+  max: 3331266ns
+  total: 7129598ns
+
+Class: org.springframework.samples.petclinic.model.Vet
+Method: getSpecialtiesInternal()
+  min: 527ns
+  avg: 1361ns
+  max: 4756ns
+  total: 73512ns
+
+Class: org.springframework.samples.petclinic.model.Vet
+Method: getNrOfSpecialties()
+  min: 7234ns
+  avg: 80564ns
+  max: 1541250ns
+  total: 1933524ns
+
+Class: org.springframework.samples.petclinic.repository.jpa.JpaVetRepositoryImpl
+Method: findAll()
+  min: 884162278ns
+  avg: 884162278ns
+  max: 884162278ns
+  total: 884162278ns
+
+Class: org.springframework.samples.petclinic.service.ClinicServiceImpl
+Method: findVets()
+  min: 885752788ns
+  avg: 885752788ns
+  max: 885752788ns
+  total: 885752788ns
+
+Class: org.springframework.samples.petclinic.web.VetController
+Method: showVetList(..)
+  min: 633724ns
+  avg: 392423143ns
+  max: 1173030898ns
+  total: 1177269429ns
+
+Class: org.springframework.samples.petclinic.web.VetController
+Method: getVets()
+  min: 612073ns
+  avg: 238908145ns
+  max: 1172835381ns
+  total: 1194540723ns
+
+Class: org.springframework.samples.petclinic.web.VetController
+Method: showXmlVetList()
+  min: 15591587ns
+  avg: 15591587ns
+  max: 15591587ns
+  total: 15591587ns
+
+Class: org.springframework.samples.petclinic.web.VetController
+Method: showJsonVetList()
+  min: 1979676ns
+  avg: 1979676ns
+  max: 1979676ns
+  total: 1979676ns
+
+Class: org.springframework.samples.petclinic.model.Vets
+Method: <init>()
+  min: 1022ns
+  avg: 1746ns
+  max: 3056ns
+  total: 8730ns
+
+Class: org.springframework.samples.petclinic.model.Vets
+Method: getVetList()
+  min: 884ns
+  avg: 4731ns
+  max: 12392ns
+  total: 47308ns
+
