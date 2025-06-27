@@ -83,6 +83,47 @@ The `pom.xml` file was modified to include:
     </executions>
 </plugin>
 ```
+
+📌 Trace Tagging for Business Capability-Level Filtering
+To enable trace filtering per business capability or test case, a custom servlet filter named TestTagLoggingFilter was introduced. This allows Kieker to capture a unique tag before the execution trace starts.
+
+🧩 Custom Filter Implementation
+A new class TestTagLoggingFilter implements javax.servlet.Filter and captures headers such as X-Test-Tag or testTag. The class is present in the /src/main/java/org/springframework/samples/petclinic/TestTagLoggingFilter.java directory.
+
+⚙️ web.xml Filter Configuration
+To apply the filter in the correct order (before the Kieker session/trace filter), the following entries were added to WEB-INF/web.xml
+```
+<filter>
+    <filter-name>TestTagLoggingFilter</filter-name>
+    <filter-class>org.springframework.samples.petclinic.TestTagLoggingFilter</filter-class>
+</filter>
+<filter-mapping>
+    <filter-name>TestTagLoggingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+<filter>
+    <filter-name>sessionAndTraceRegistrationFilter</filter-name>
+    <filter-class>kieker.monitoring.probe.servlet.SessionAndTraceRegistrationFilter</filter-class>
+    <init-param>
+        <param-name>logFilterExecution</param-name>
+        <param-value>true</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>sessionAndTraceRegistrationFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+```
+🧪 Using in Test Automation (e.g., Katalon Recorder)
+In Katalon Recorder or similar tools, use a runScript command with the following Target before each test case (put 'response' in the value):
+```var xhr = new XMLHttpRequest(); 
+xhr.open("GET", "http://localhost:8080/owners/", false); 
+xhr.setRequestHeader("X-Test-Tag", "Test_BusinessCapabilityName_TestCaseName"); 
+xhr.send(null); 
+return xhr.responseText;
+```
+This injects a unique tag, recorded as a separate Kieker record, to separate trace segments per test case.
 ---
 ###### Note for future reference 
 
